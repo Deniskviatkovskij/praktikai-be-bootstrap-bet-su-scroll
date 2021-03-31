@@ -1,0 +1,1 @@
+Be bootstrap. Kartais abu stulpeliai rodo tą pačią nuotrauką. Padarytas nuotraukų grid. Rikiavimas pagal pavadinimą (eilute). Infinite scroll. Galima perdaryti pagal išorinį API, tačiau bus ne savo įkeltos nuotraukos.

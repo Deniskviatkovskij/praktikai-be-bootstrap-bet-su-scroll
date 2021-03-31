@@ -1,0 +1,104 @@
+.ball {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background: orange; /* change color here */
+    position: absolute;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes reveal {
+    from {
+      transform: scale(0.001);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slide {
+    to {
+      transform: translateX(1em);
+    }
+  }
+  
+  .ball:nth-child(1),
+  .ball:nth-child(2) {
+    left: 0;
+    animation-name: reveal;
+  }
+  .ball:nth-child(3) {
+    left: 0.5em;
+    animation-name: slide;
+  }
+  .ball:nth-child(4) {
+    left: 2em;
+    animation-name: reveal;
+    animation-direction: reverse;
+  }
+  
+  .loading {
+    opacity: 0;
+    font-size: 20px;
+    position: relative;
+    width: 4em;
+    height: 1em;
+    margin: 10px auto;
+  }
+  
+  .loading.show {
+    opacity: 1;
+  }
+  
+  #container {
+    margin-bottom: 0px;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+    line-height: 0;
+  -webkit-column-count: 2;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    2;
+  -moz-column-gap:      0px;
+  column-count:         2;
+  column-gap:           0px; 
+ 
+  }
+
+  .dar {
+   
+      position: relative;
+      
+  }
+
+  .pagr {
+    
+      display: flex;
+      justify-content: center;
+      
+  
+  }
+
+  .box {
+      justify-content: center;
+      display: flex;
+      background: #f4f4f4;
+      padding-top: 5%;
+  }
+
+  .box h2 {
+      position: absolute;
+      color: orange;
+  }
+  
+  #container img {
+    width: 100% !important;
+    height: auto !important;
+    
+  }
+
